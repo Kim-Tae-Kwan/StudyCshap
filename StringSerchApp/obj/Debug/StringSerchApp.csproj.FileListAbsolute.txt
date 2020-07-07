@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\StringSerchApp\bin\Debug\StringSerchApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\StringSerchApp\bin\Debug\StringSerchApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\StringSerchApp\bin\Debug\StringSerchApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\StringSerchApp\obj\Debug\StringSerchApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\StringSerchApp\obj\Debug\StringSerchApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\StringSerchApp\obj\Debug\StringSerchApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\StringSerchApp\obj\Debug\StringSerchApp.pdb

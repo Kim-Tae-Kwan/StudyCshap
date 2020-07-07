@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwapByValue\bin\Debug\SwapByValue.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwapByValue\bin\Debug\SwapByValue.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwapByValue\bin\Debug\SwapByValue.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwapByValue\obj\Debug\SwapByValue.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwapByValue\obj\Debug\SwapByValue.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwapByValue\obj\Debug\SwapByValue.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwapByValue\obj\Debug\SwapByValue.pdb

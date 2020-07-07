@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\IFELSE\bin\Debug\IFELSE.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\IFELSE\bin\Debug\IFELSE.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\IFELSE\bin\Debug\IFELSE.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\IFELSE\obj\Debug\IFELSE.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\IFELSE\obj\Debug\IFELSE.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\IFELSE\obj\Debug\IFELSE.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\IFELSE\obj\Debug\IFELSE.pdb

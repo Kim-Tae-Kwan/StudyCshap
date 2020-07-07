@@ -1,0 +1,6 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\Ex6_2\bin\Debug\Ex6_2.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\Ex6_2\bin\Debug\Ex6_2.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\Ex6_2\bin\Debug\Ex6_2.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\Ex6_2\obj\Debug\Ex6_2.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\Ex6_2\obj\Debug\Ex6_2.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\Ex6_2\obj\Debug\Ex6_2.pdb

@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\enum\bin\Debug\@enum.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\enum\bin\Debug\@enum.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\enum\bin\Debug\@enum.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\enum\obj\Debug\enum.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\enum\obj\Debug\enum.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\enum\obj\Debug\@enum.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\enum\obj\Debug\@enum.pdb

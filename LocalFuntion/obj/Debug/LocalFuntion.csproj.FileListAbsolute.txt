@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\LocalFuntion\bin\Debug\LocalFuntion.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\LocalFuntion\bin\Debug\LocalFuntion.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\LocalFuntion\bin\Debug\LocalFuntion.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\LocalFuntion\obj\Debug\LocalFuntion.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\LocalFuntion\obj\Debug\LocalFuntion.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\LocalFuntion\obj\Debug\LocalFuntion.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\LocalFuntion\obj\Debug\LocalFuntion.pdb

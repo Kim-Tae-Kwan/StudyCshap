@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwitchCaseApp\bin\Debug\SwitchCaseApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwitchCaseApp\bin\Debug\SwitchCaseApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwitchCaseApp\bin\Debug\SwitchCaseApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwitchCaseApp\obj\Debug\SwitchCaseApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwitchCaseApp\obj\Debug\SwitchCaseApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwitchCaseApp\obj\Debug\SwitchCaseApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StudyCshap\SwitchCaseApp\obj\Debug\SwitchCaseApp.pdb
