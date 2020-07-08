@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Overriding\bin\Debug\Overriding.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Overriding\bin\Debug\Overriding.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Overriding\bin\Debug\Overriding.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Overriding\obj\Debug\OverridingApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Overriding\obj\Debug\OverridingApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Overriding\obj\Debug\Overriding.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Overriding\obj\Debug\Overriding.pdb

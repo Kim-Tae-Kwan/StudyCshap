@@ -1,0 +1,6 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Static\bin\Debug\Static.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Static\bin\Debug\Static.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Static\bin\Debug\Static.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Static\obj\Debug\Static.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Static\obj\Debug\Static.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Static\obj\Debug\Static.pdb

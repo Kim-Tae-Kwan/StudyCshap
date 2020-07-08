@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StructureApp\bin\Debug\StructureApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StructureApp\bin\Debug\StructureApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StructureApp\bin\Debug\StructureApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StructureApp\obj\Debug\StructureApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StructureApp\obj\Debug\StructureApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StructureApp\obj\Debug\StructureApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\StructureApp\obj\Debug\StructureApp.pdb

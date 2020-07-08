@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\TupleApp\bin\Debug\TupleApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\TupleApp\bin\Debug\TupleApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\TupleApp\bin\Debug\TupleApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\TupleApp\obj\Debug\TupleApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\TupleApp\obj\Debug\TupleApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\TupleApp\obj\Debug\TupleApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\TupleApp\obj\Debug\TupleApp.pdb

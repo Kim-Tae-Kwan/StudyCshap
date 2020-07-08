@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\InterfaceApp\bin\Debug\InterfaceApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\InterfaceApp\bin\Debug\InterfaceApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\InterfaceApp\bin\Debug\InterfaceApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\InterfaceApp\obj\Debug\InterfaceApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\InterfaceApp\obj\Debug\InterfaceApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\InterfaceApp\obj\Debug\InterfaceApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\InterfaceApp\obj\Debug\InterfaceApp.pdb

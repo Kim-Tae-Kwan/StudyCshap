@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BasicClassApp\bin\Debug\BasicClassApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BasicClassApp\bin\Debug\BasicClassApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BasicClassApp\bin\Debug\BasicClassApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BasicClassApp\obj\Debug\BasicClassApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BasicClassApp\obj\Debug\BasicClassApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BasicClassApp\obj\Debug\BasicClassApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BasicClassApp\obj\Debug\BasicClassApp.pdb

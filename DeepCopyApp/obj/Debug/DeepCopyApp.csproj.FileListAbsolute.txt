@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\DeepCopyApp\bin\Debug\DeepCopyApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\DeepCopyApp\bin\Debug\DeepCopyApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\DeepCopyApp\bin\Debug\DeepCopyApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\DeepCopyApp\obj\Debug\DeepCopyApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\DeepCopyApp\obj\Debug\DeepCopyApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\DeepCopyApp\obj\Debug\DeepCopyApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\DeepCopyApp\obj\Debug\DeepCopyApp.pdb

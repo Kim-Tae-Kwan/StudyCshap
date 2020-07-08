@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\ExtensionMethodApp\bin\Debug\ExtensionMethodApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\ExtensionMethodApp\bin\Debug\ExtensionMethodApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\ExtensionMethodApp\bin\Debug\ExtensionMethodApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\ExtensionMethodApp\obj\Debug\ExtensionMethodApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\ExtensionMethodApp\obj\Debug\ExtensionMethodApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\ExtensionMethodApp\obj\Debug\ExtensionMethodApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\ExtensionMethodApp\obj\Debug\ExtensionMethodApp.pdb
