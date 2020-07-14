@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\CopyingArray\bin\Debug\CopyingArray.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\CopyingArray\bin\Debug\CopyingArray.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\CopyingArray\bin\Debug\CopyingArray.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\CopyingArray\obj\Debug\CopyingArray.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\CopyingArray\obj\Debug\CopyingArray.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\CopyingArray\obj\Debug\CopyingArray.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\CopyingArray\obj\Debug\CopyingArray.pdb

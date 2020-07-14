@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\AbstractClassApp\bin\Debug\AbstractClassApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\AbstractClassApp\bin\Debug\AbstractClassApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\AbstractClassApp\bin\Debug\AbstractClassApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\AbstractClassApp\obj\Debug\AbstractClassApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\AbstractClassApp\obj\Debug\AbstractClassApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\AbstractClassApp\obj\Debug\AbstractClassApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\AbstractClassApp\obj\Debug\AbstractClassApp.pdb

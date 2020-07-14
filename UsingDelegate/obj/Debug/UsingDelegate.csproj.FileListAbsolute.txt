@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingDelegate\bin\Debug\UsingDelegate.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingDelegate\bin\Debug\UsingDelegate.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingDelegate\bin\Debug\UsingDelegate.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingDelegate\obj\Debug\UsingDelegate.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingDelegate\obj\Debug\UsingDelegate.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingDelegate\obj\Debug\UsingDelegate.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingDelegate\obj\Debug\UsingDelegate.pdb

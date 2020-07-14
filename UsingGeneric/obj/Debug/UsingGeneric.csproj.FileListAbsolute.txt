@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGeneric\bin\Debug\UsingGeneric.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGeneric\bin\Debug\UsingGeneric.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGeneric\bin\Debug\UsingGeneric.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGeneric\obj\Debug\UsingGeneric.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGeneric\obj\Debug\UsingGeneric.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGeneric\obj\Debug\UsingGeneric.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGeneric\obj\Debug\UsingGeneric.pdb

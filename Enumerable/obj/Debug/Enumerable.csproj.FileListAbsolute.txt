@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Enumerable\bin\Debug\Enumerable.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Enumerable\bin\Debug\Enumerable.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Enumerable\bin\Debug\Enumerable.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Enumerable\obj\Debug\Enumerable.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Enumerable\obj\Debug\Enumerable.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Enumerable\obj\Debug\Enumerable.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Enumerable\obj\Debug\Enumerable.pdb

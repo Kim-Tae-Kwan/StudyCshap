@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Throw\bin\Debug\Throw.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Throw\bin\Debug\Throw.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Throw\bin\Debug\Throw.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Throw\obj\Debug\Throw.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Throw\obj\Debug\Throw.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Throw\obj\Debug\Throw.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Throw\obj\Debug\Throw.csprojAssemblyReference.cache

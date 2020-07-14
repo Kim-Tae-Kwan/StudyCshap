@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\EnumerableGeneric\bin\Debug\EnumerableGeneric.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\EnumerableGeneric\bin\Debug\EnumerableGeneric.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\EnumerableGeneric\bin\Debug\EnumerableGeneric.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\EnumerableGeneric\obj\Debug\EnumerableGeneric.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\EnumerableGeneric\obj\Debug\EnumerableGeneric.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\EnumerableGeneric\obj\Debug\EnumerableGeneric.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\EnumerableGeneric\obj\Debug\EnumerableGeneric.pdb

@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\PropertyApp\obj\Debug\PropertyApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\PropertyApp\obj\Debug\PropertyApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\PropertyApp\bin\Debug\PropertyApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\PropertyApp\bin\Debug\PropertyApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\PropertyApp\bin\Debug\PropertyApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\PropertyApp\obj\Debug\PropertyApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\PropertyApp\obj\Debug\PropertyApp.pdb

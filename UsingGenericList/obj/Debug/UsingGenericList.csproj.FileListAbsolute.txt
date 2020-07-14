@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGenericList\bin\Debug\UsingGenericList.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGenericList\bin\Debug\UsingGenericList.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGenericList\bin\Debug\UsingGenericList.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGenericList\obj\Debug\UsingGenericList.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGenericList\obj\Debug\UsingGenericList.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGenericList\obj\Debug\UsingGenericList.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingGenericList\obj\Debug\UsingGenericList.pdb

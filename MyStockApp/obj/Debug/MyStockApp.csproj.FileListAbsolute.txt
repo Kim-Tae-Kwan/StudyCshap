@@ -1,0 +1,14 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\bin\Debug\MyStockApp.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\bin\Debug\MyStockApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\bin\Debug\MyStockApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.Properties.Resources.resources
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.csproj.GenerateResource.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\bin\Debug\MetroFramework.dll
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.csproj.CopyComplete
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.SubItems.SearchItemForm.resources
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.MainForm.resources

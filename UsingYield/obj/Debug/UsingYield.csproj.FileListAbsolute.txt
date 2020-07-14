@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingYield\bin\Debug\UsingYield.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingYield\bin\Debug\UsingYield.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingYield\bin\Debug\UsingYield.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingYield\obj\Debug\UsingYield.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingYield\obj\Debug\UsingYield.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingYield\obj\Debug\UsingYield.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\UsingYield\obj\Debug\UsingYield.pdb

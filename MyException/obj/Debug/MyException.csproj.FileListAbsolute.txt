@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyException\bin\Debug\MyException.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyException\bin\Debug\MyException.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyException\bin\Debug\MyException.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyException\obj\Debug\MyException.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyException\obj\Debug\MyException.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyException\obj\Debug\MyException.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyException\obj\Debug\MyException.pdb

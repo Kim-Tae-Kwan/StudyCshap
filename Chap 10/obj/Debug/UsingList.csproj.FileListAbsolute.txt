@@ -1,0 +1,7 @@
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Chap 10\bin\Debug\Chap 10.exe.config
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Chap 10\bin\Debug\Chap 10.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Chap 10\bin\Debug\Chap 10.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Chap 10\obj\Debug\UsingList.csprojAssemblyReference.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Chap 10\obj\Debug\UsingList.csproj.CoreCompileInputs.cache
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Chap 10\obj\Debug\Chap 10.exe
+C:\Users\PKNU\Desktop\IOT\StudyCshap\Chap 10\obj\Debug\Chap 10.pdb
