@@ -37,3 +37,4 @@ C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopA
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopApp.pdb
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopApp.SubItems.LoginForm.resources
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopApp.SubItems.DivMngForm.resources
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopApp.SubItems.BookDBMngForm.resources

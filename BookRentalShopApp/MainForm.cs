@@ -36,16 +36,27 @@ namespace BookRentalShopApp
         private void MnuItemCodeMng_Click(object sender, EventArgs e)
         {
             DivMngForm form = new DivMngForm();
-            form.MdiParent = this;
-            form.Text = "구분코드 관리";
-            form.Dock = DockStyle.Fill;
-            form.Show();
-            form.WindowState = FormWindowState.Maximized;
+            ShowFormControl(form,"코드 관리");
         }
 
         private void MnuItemExit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void MnuItemBooksMng_Click(object sender, EventArgs e)
+        {
+            BookDBMngForm form = new BookDBMngForm();
+            ShowFormControl(form,"도서 관리");
+        }
+
+        private void ShowFormControl(Form form,string title) // Division,Book  Form 생성하는 함수
+        {
+            form.MdiParent = this;
+            form.Text = title;
+            form.Dock = DockStyle.Fill;
+            form.Show();
+            form.WindowState = FormWindowState.Maximized;
         }
     }
 }

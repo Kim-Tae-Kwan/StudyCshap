@@ -5,10 +5,11 @@ C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\bin\Debug\MetroFramework.Design
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\bin\Debug\MetroFramework.dll
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.csprojAssemblyReference.cache
-C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.Form1.resources
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.Properties.Resources.resources
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.csproj.GenerateResource.cache
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.csproj.CoreCompileInputs.cache
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.csproj.CopyComplete
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.exe
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.MainForm.resources
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BusanBusApp\obj\Debug\BusanBusApp.SubItems.BusStopInfo.resources

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 using MetroFramework;
@@ -7,33 +8,70 @@ using MySql.Data.MySqlClient;
 
 namespace BookRentalShopApp.SubItems
 {
-    public partial class DivMngForm : MetroForm
+    public partial class BookDBMngForm : MetroForm
     {
-        readonly string strTblName = "divTbl";
+        readonly string strTblName = "booksTbl";
 
         BaseMode MyMode=BaseMode.NONE;
-        public DivMngForm()
+        public BookDBMngForm()
         {
             InitializeComponent();
         }
 
         private void DivMngForm_Load(object sender, EventArgs e)
         {
+            InitControls();
+            UpdateComboboxDivision();
             UpdateData();
+        }
+
+        private void UpdateComboboxDivision()
+        {
+            using (MySqlConnection conn = new MySqlConnection(Commons.CONNSTR))
+            {
+                string strQuery = $"SELECT Division, Names FROM divTbl ";
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(strQuery, conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                Dictionary<string, string> temps = new Dictionary<string, string>();
+                temps.Add("선택", "");
+
+                while (reader.Read())
+                {
+                    temps.Add(reader[1].ToString(), reader[0].ToString());
+                }
+
+                CboDivision.DataSource = new BindingSource(temps, null);
+                CboDivision.DisplayMember = "Key";
+                CboDivision.ValueMember = "Value";
+                //CboDivision.SelectedIndex = -1;
+                
+            }
         }
 
         private void UpdateData()
         {
             using (MySqlConnection con = new MySqlConnection(Commons.CONNSTR))
             {
-                string strQuery = $"SELECT Division,Names FROM {strTblName}";
+                string strQuery = $"SELECT b.Idx, " +
+                                   "       b.Author, " +
+                                   "       b.Division, " +
+                                   "       d.Names AS DIvisionName, " +
+                                   "       b.Names, " +
+                                   "       b.ReleaseDate, " +
+                                   "       b.ISBN, " +
+                                   "       b.Price " +
+                                   " FROM bookstbl AS b " +
+                                   " INNER JOIN divtbl AS d " +
+                                   " ON b.Division = d.Division";
                 con.Open();
                 MySqlDataAdapter adapter = new MySqlDataAdapter(strQuery, con);
                 DataSet ds = new DataSet();
                 adapter.Fill(ds, strTblName);
 
-                GrdDivTbl.DataSource = ds;
-                GrdDivTbl.DataMember = strTblName;
+                GrdBooksTbl.DataSource = ds;
+                GrdBooksTbl.DataMember = strTblName;
             }
 
             SetColumnHeaders();
@@ -44,14 +82,36 @@ namespace BookRentalShopApp.SubItems
         {
             DataGridViewColumn column;
 
-            column = GrdDivTbl.Columns[0];
+            column = GrdBooksTbl.Columns[0];
             column.Width = 100;
-            column.HeaderText = "구분코드";
+            column.HeaderText = "번호";
 
-            column = GrdDivTbl.Columns[1];
-            column.Width = 150;
+            column = GrdBooksTbl.Columns[1];
+            column.Width = 120;
+            column.HeaderText = "저자명";
+
+            column = GrdBooksTbl.Columns[2];
+            column.Visible = false;
+
+            column = GrdBooksTbl.Columns[3];
+            column.Width = 100;
+            column.HeaderText = "장르";
+
+            column = GrdBooksTbl.Columns[4];
+            column.Width = 200;
             column.HeaderText = "이름";
-            
+
+            column = GrdBooksTbl.Columns[5];
+            column.Width = 150;
+            column.HeaderText = "출간일";
+
+            column = GrdBooksTbl.Columns[6];
+            column.Width = 150;
+            column.HeaderText = "ISBN";
+
+            column = GrdBooksTbl.Columns[7];
+            column.Width = 100;
+            column.HeaderText = "가격";
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
@@ -68,8 +128,25 @@ namespace BookRentalShopApp.SubItems
 
         private void InitControls()
         {
-            TxtDivison.Text = TxtNames.Text = String.Empty;
-            TxtDivison.Focus();
+            TxtNum.Text = TxtAuthor.Text = String.Empty;
+            TxtNum.Focus();
+
+            MyMode = BaseMode.NONE;
+
+            //콤보박스 데이터바인딩
+            //Dictionary<string, string> dic = new Dictionary<string, string>();
+            //dic.Add("선택", "00");
+            //dic.Add("서울특별시", "11");
+            //dic.Add("부산광역시", "21");
+            //dic.Add("대구광역시", "22");
+            //dic.Add("인천광역시", "23");
+            //dic.Add("광주광역시", "24");
+            //dic.Add("대전광역시", "25");
+
+            //CboDivision.DataSource = new BindingSource(dic, null);
+            //CboDivision.DisplayMember = "Key";
+            //CboDivision.ValueMember = "Value";
+
         }
         #region 삭제 메소드 주석
         /*
@@ -108,10 +185,10 @@ namespace BookRentalShopApp.SubItems
 
         private void BtnNew_Click(object sender, EventArgs e)
         {
-            TxtDivison.Text = TxtNames.Text = string.Empty;
-            TxtDivison.ReadOnly = false;
+            TxtNum.Text = TxtAuthor.Text = string.Empty;
+            TxtNum.ReadOnly = false;
 
-            TxtDivison.Focus();
+            TxtNum.Focus();
             MyMode = BaseMode.INSERT; // 신규입력 모드
         }
 
@@ -120,7 +197,7 @@ namespace BookRentalShopApp.SubItems
         /// </summary>
         private void SaveData()
         {
-            if (string.IsNullOrEmpty(TxtDivison.Text) || string.IsNullOrEmpty(TxtNames.Text))
+            if (string.IsNullOrEmpty(TxtNum.Text) || string.IsNullOrEmpty(TxtAuthor.Text))
             {
                 MetroMessageBox.Show(this, "빈 값은 넣을 수 없습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -160,17 +237,17 @@ namespace BookRentalShopApp.SubItems
                     if(MyMode == BaseMode.INSERT || MyMode == BaseMode.UPDATE)
                     {
                         MySqlParameter paramNames = new MySqlParameter("@Names", MySqlDbType.VarChar, 45); // 파라미터 설정
-                        paramNames.Value = TxtNames.Text;
+                        paramNames.Value = TxtAuthor.Text;
                         cmd.Parameters.Add(paramNames); //@Names <=== paramNames.Value
 
                         MySqlParameter paramDivision = new MySqlParameter("@Division", MySqlDbType.VarChar, 4);
-                        paramDivision.Value = TxtDivison.Text;
+                        paramDivision.Value = TxtNum.Text;
                         cmd.Parameters.Add(paramDivision); //@Division <=== paramDivision.Value
                     }
                     else if(MyMode == BaseMode.DELETE)
                     {
                         MySqlParameter paramDivison = new MySqlParameter("@Division", MySqlDbType.VarChar);
-                        paramDivison.Value = TxtDivison.Text;
+                        paramDivison.Value = TxtNum.Text;
                         cmd.Parameters.Add(paramDivison);
                     }
 
@@ -199,7 +276,7 @@ namespace BookRentalShopApp.SubItems
             }
             finally
             {
-                TxtDivison.Focus();
+                TxtNum.Focus();
                 UpdateData();
             }
         }
@@ -221,16 +298,22 @@ namespace BookRentalShopApp.SubItems
             if(e.RowIndex > -1)
             {
                 //Grid 셀 중 Rows 데이터 들고옴
-                DataGridViewRow data = GrdDivTbl.Rows[e.RowIndex];//선택한 행의 데이터 들고옴
-                TxtDivison.Text = data.Cells[0].Value.ToString();//행의 0번째 열 데이터
-                TxtNames.Text = data.Cells[1].Value.ToString();//행의 1번째 열 데이터
+                DataGridViewRow data = GrdBooksTbl.Rows[e.RowIndex];//선택한 행의 데이터 들고옴
+                TxtNum.Text = data.Cells[0].Value.ToString();//행의 0번째 열 데이터
+                TxtAuthor.Text = data.Cells[1].Value.ToString();//행의 1번째 열 데이터
 
-                TxtDivison.ReadOnly = true; //PK가 들어가는 텍스트는 수정 안함!!
+                TxtNum.ReadOnly = true; //PK가 들어가는 텍스트는 수정 안함!!
 
                 MyMode = BaseMode.UPDATE; // 수정 모드 변경
             }
 
 
+        }
+
+        private void CboDivision_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(CboDivision.SelectedIndex > 0)
+                MessageBox.Show(CboDivision.SelectedValue.ToString());
         }
     }
 }

@@ -1,0 +1,24 @@
+인증키 : 
+2397AZ16W0CRNwX58btT5QMtQ9gDRjo8TvCgF0Uj7QaSolpegysBotc5pVZg7HKyDBSK%2B%2BcabU%2FiMz5HfJmXVg%3D%3D
+
+
+1. 산정보 서비스(국내 소재 3,368개 설명)
+
+서비스 URL : 
+http://apis.data.go.kr/1400000/service/cultureInfoService/mntInfoOpenAPI
+
+요청 변수
+- 산명	searchWrd
+
+출력결과
+
+소재지		mntiadd
+관리주체		mntiadmin
+관리자전화번호	mntiadminnum
+산상세정보내용	mntidetails
+높이(m미터)	mntihigh
+산정보코드	mntlistno	
+관리자전화번호	mntiadminnum
+산명		mntiname
+
+2.
