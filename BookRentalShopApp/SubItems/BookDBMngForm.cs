@@ -20,20 +20,22 @@ namespace BookRentalShopApp.SubItems
 
         private void DivMngForm_Load(object sender, EventArgs e)
         {
-            InitControls();
+            
             UpdateComboboxDivision();
             UpdateData();
+            InitControls();
         }
 
         private void UpdateComboboxDivision()
         {
             using (MySqlConnection conn = new MySqlConnection(Commons.CONNSTR))
             {
-                string strQuery = $"SELECT Division, Names FROM divTbl ";
-                conn.Open();
+                string strQuery = $"SELECT Division, Names FROM divTbl "; // 쿼리문 
+                conn.Open(); // 연결시작
                 MySqlCommand cmd = new MySqlCommand(strQuery, conn);
                 MySqlDataReader reader = cmd.ExecuteReader();
 
+                
                 Dictionary<string, string> temps = new Dictionary<string, string>();
                 temps.Add("선택", "");
 
@@ -42,6 +44,7 @@ namespace BookRentalShopApp.SubItems
                     temps.Add(reader[1].ToString(), reader[0].ToString());
                 }
 
+                //콤보박스 
                 CboDivision.DataSource = new BindingSource(temps, null);
                 CboDivision.DisplayMember = "Key";
                 CboDivision.ValueMember = "Value";
@@ -52,6 +55,7 @@ namespace BookRentalShopApp.SubItems
 
         private void UpdateData()
         {
+            //DB 연결
             using (MySqlConnection con = new MySqlConnection(Commons.CONNSTR))
             {
                 string strQuery = $"SELECT b.Idx, " +
@@ -62,9 +66,11 @@ namespace BookRentalShopApp.SubItems
                                    "       b.ReleaseDate, " +
                                    "       b.ISBN, " +
                                    "       b.Price " +
-                                   " FROM bookstbl AS b " +
+                                   " FROM  bookstbl AS b " +
                                    " INNER JOIN divtbl AS d " +
-                                   " ON b.Division = d.Division";
+                                   " ON    b.Division = d.Division " +
+                                   " ORDER BY b.Idx ASC";
+
                 con.Open();
                 MySqlDataAdapter adapter = new MySqlDataAdapter(strQuery, con);
                 DataSet ds = new DataSet();
@@ -128,24 +134,20 @@ namespace BookRentalShopApp.SubItems
 
         private void InitControls()
         {
-            TxtNum.Text = TxtAuthor.Text = String.Empty;
-            TxtNum.Focus();
-
+            TxtIdx.Text = TxtAuthor.Text = String.Empty;
+            TxtIsbn.Text = TxtNames.Text = TxtPrice.Text = string.Empty;
+            CboDivision.SelectedIndex = 0; // 선택
+            TxtIdx.Focus();
+            //날짜
+            DtpRealeseDate.CustomFormat = "yyyy-MM-dd";
+            DtpRealeseDate.Format = DateTimePickerFormat.Custom;
+            DtpRealeseDate.Value = DateTime.Now;
+            
+            
+            
             MyMode = BaseMode.NONE;
 
-            //콤보박스 데이터바인딩
-            //Dictionary<string, string> dic = new Dictionary<string, string>();
-            //dic.Add("선택", "00");
-            //dic.Add("서울특별시", "11");
-            //dic.Add("부산광역시", "21");
-            //dic.Add("대구광역시", "22");
-            //dic.Add("인천광역시", "23");
-            //dic.Add("광주광역시", "24");
-            //dic.Add("대전광역시", "25");
-
-            //CboDivision.DataSource = new BindingSource(dic, null);
-            //CboDivision.DisplayMember = "Key";
-            //CboDivision.ValueMember = "Value";
+           
 
         }
         #region 삭제 메소드 주석
@@ -185,10 +187,11 @@ namespace BookRentalShopApp.SubItems
 
         private void BtnNew_Click(object sender, EventArgs e)
         {
-            TxtNum.Text = TxtAuthor.Text = string.Empty;
-            TxtNum.ReadOnly = false;
+            InitControls();
 
-            TxtNum.Focus();
+
+
+
             MyMode = BaseMode.INSERT; // 신규입력 모드
         }
 
@@ -197,7 +200,10 @@ namespace BookRentalShopApp.SubItems
         /// </summary>
         private void SaveData()
         {
-            if (string.IsNullOrEmpty(TxtNum.Text) || string.IsNullOrEmpty(TxtAuthor.Text))
+            //빈값 비교 NULL 체크
+            if (string.IsNullOrEmpty(TxtAuthor.Text)
+                || CboDivision.SelectedIndex <1 || string.IsNullOrEmpty(TxtNames.Text) ||
+                string.IsNullOrEmpty(TxtIsbn.Text))
             {
                 MetroMessageBox.Show(this, "빈 값은 넣을 수 없습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -218,40 +224,108 @@ namespace BookRentalShopApp.SubItems
                     cmd.Connection = conn;
                     if(MyMode == BaseMode.UPDATE)
                     {
-                        cmd.CommandText = "UPDATE divtbl " +
-                                          "  SET Names = @Names " +
-                                          " WHERE Division = @Division"; //Update문 작성
+                        cmd.CommandText = "UPDATE bookstbl " +
+                                          "   SET Author      = @Author, " +
+                                          "       Division    = @Division, " +
+                                          "       Names       = @Names, " +
+                                          "       ReleaseDate = @ReleaseDate, " +
+                                          "       ISBN        = @ISBN, " +
+                                          "       Price       = @Price " +
+                                          " WHERE Idx = @Idx"; //Update문 작성
                     }
                     else if(MyMode == BaseMode.INSERT)
                     {
-                        cmd.CommandText = "INSERT INTO "+
-                                          " divtbl (Division,Names) "+
-                                          " VALUES(@Division, @Names); ";
-                    }
-                    else if(MyMode == BaseMode.DELETE)
-                    {
-                        cmd.CommandText = "DELETE FROM divtbl " +
-                                      "  WHERE Division = @Division";
+                        cmd.CommandText = "INSERT INTO bookstbl "+
+                                          "            ( "+
+                                          "            Author, "+
+                                          "            Division, "+
+                                          "            Names, " +
+                                          "            ReleaseDate, " +
+                                          "            ISBN, " +
+                                          "            Price " +
+                                          "            ) " +
+                                          " VALUES " +
+                                          "            ( " +
+                                          "            @Author, " +
+                                          "            @Division, " +
+                                          "            @Names, " +
+                                          "            @ReleaseDate, " +
+                                          "            @ISBN, " +
+                                          "            @Price)";
+
                     }
 
-                    if(MyMode == BaseMode.INSERT || MyMode == BaseMode.UPDATE)
-                    {
-                        MySqlParameter paramNames = new MySqlParameter("@Names", MySqlDbType.VarChar, 45); // 파라미터 설정
-                        paramNames.Value = TxtAuthor.Text;
-                        cmd.Parameters.Add(paramNames); //@Names <=== paramNames.Value
 
-                        MySqlParameter paramDivision = new MySqlParameter("@Division", MySqlDbType.VarChar, 4);
-                        paramDivision.Value = TxtNum.Text;
-                        cmd.Parameters.Add(paramDivision); //@Division <=== paramDivision.Value
-                    }
-                    else if(MyMode == BaseMode.DELETE)
+                    //파라미터 설정
+                    
+                        //저자명
+                        MySqlParameter paramAuthor = new MySqlParameter("@Author", MySqlDbType.VarChar, 45)
+                        {
+                            Value = TxtAuthor.Text
+                        };
+                        cmd.Parameters.Add(paramAuthor); //@Names <=== paramNames.Value
+                                                         //장르
+                        MySqlParameter paramDivision = new MySqlParameter("@Division", MySqlDbType.VarChar, 4)
+                        {
+                            Value = CboDivision.SelectedValue
+                        };
+                        cmd.Parameters.Add(paramDivision);
+                        //책이름
+                        MySqlParameter paramNames = new MySqlParameter("@Names", MySqlDbType.VarChar, 100)
+                        {
+                            Value = TxtNames.Text
+                        };
+                        cmd.Parameters.Add(paramNames);
+                        //출간일
+                        MySqlParameter paramReleaseDate = new MySqlParameter("@ReleaseDate", MySqlDbType.Date)
+                        {
+                            Value = DtpRealeseDate.Value
+                        };
+                        cmd.Parameters.Add(paramReleaseDate);
+                        //코드
+                        MySqlParameter paramISBN = new MySqlParameter("@ISBN", MySqlDbType.VarChar, 13)
+                        {
+                            Value = TxtIsbn.Text
+                        };
+                        cmd.Parameters.Add(paramISBN);
+                        //가격
+                        MySqlParameter paramPrice = new MySqlParameter("@Price", MySqlDbType.Decimal)
+                        {
+                            Value = TxtPrice.Text
+                        };
+                        cmd.Parameters.Add(paramPrice);
+                    
+
+                    if (MyMode == BaseMode.UPDATE)
                     {
-                        MySqlParameter paramDivison = new MySqlParameter("@Division", MySqlDbType.VarChar);
-                        paramDivison.Value = TxtNum.Text;
-                        cmd.Parameters.Add(paramDivison);
+                        //Idx PK
+                        MySqlParameter paramIdx = new MySqlParameter("@Idx", MySqlDbType.Int16)
+                        {
+                            Value = TxtIdx.Text
+                        };
+                        cmd.Parameters.Add(paramIdx);
                     }
+
+
+
+
+
+
+
+
+                    //else if(MyMode == BaseMode.DELETE)
+                    //{
+                    //    MySqlParameter paramDivison = new MySqlParameter("@Division", MySqlDbType.VarChar);
+                    //    paramDivison.Value = TxtNum.Text;
+                    //    cmd.Parameters.Add(paramDivison);
+                    //}
+
+
 
                     var result = cmd.ExecuteNonQuery(); //쿼리문 실행.
+
+
+
 
                     if(MyMode == BaseMode.INSERT)
                     {
@@ -276,7 +350,7 @@ namespace BookRentalShopApp.SubItems
             }
             finally
             {
-                TxtNum.Focus();
+                TxtIdx.Focus();
                 UpdateData();
             }
         }
@@ -299,21 +373,33 @@ namespace BookRentalShopApp.SubItems
             {
                 //Grid 셀 중 Rows 데이터 들고옴
                 DataGridViewRow data = GrdBooksTbl.Rows[e.RowIndex];//선택한 행의 데이터 들고옴
-                TxtNum.Text = data.Cells[0].Value.ToString();//행의 0번째 열 데이터
-                TxtAuthor.Text = data.Cells[1].Value.ToString();//행의 1번째 열 데이터
+                TxtIdx.Text = data.Cells[0].Value.ToString();       //TxtBox에 출력
+                TxtAuthor.Text = data.Cells[1].Value.ToString();    //TxtBox에 출력
 
-                TxtNum.ReadOnly = true; //PK가 들어가는 텍스트는 수정 안함!!
+                //콤보박스
+                //로맨스,추리등 디스플레이되는 글자로 인덱스 찾기
+                //CboDivision.SelectedIndex = CboDivision.FindString(data.Cells[3].Value.ToString());
 
+                //코드값을 그대로 할당
+                CboDivision.SelectedValue = data.Cells[2].Value.ToString();
+
+                TxtNames.Text = data.Cells[4].Value.ToString();     //TxtBox에 출력
+
+                //날짜
+                DtpRealeseDate.CustomFormat = "yyyy-MM-dd";
+                DtpRealeseDate.Format = DateTimePickerFormat.Custom;
+                DtpRealeseDate.Value = DateTime.Parse(data.Cells[5].Value.ToString()); //DateTime 타입으로 변환
+
+                TxtIsbn.Text = data.Cells[6].Value.ToString();      //TxtBox에 출력
+                TxtPrice.Text = data.Cells[7].Value.ToString();     //TxtBox에 출력
+
+                TxtIdx.ReadOnly = true; //PK가 들어가는 텍스트는 수정 안함!!
                 MyMode = BaseMode.UPDATE; // 수정 모드 변경
             }
 
 
         }
 
-        private void CboDivision_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(CboDivision.SelectedIndex > 0)
-                MessageBox.Show(CboDivision.SelectedValue.ToString());
-        }
+        
     }
 }

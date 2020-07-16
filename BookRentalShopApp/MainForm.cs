@@ -58,5 +58,11 @@ namespace BookRentalShopApp
             form.Show();
             form.WindowState = FormWindowState.Maximized;
         }
+
+        private void MnuItemMembMng_Click(object sender, EventArgs e)
+        {
+            MembMngForm form = new MembMngForm();
+            ShowFormControl(form, "회원 관리");
+        }
     }
 }

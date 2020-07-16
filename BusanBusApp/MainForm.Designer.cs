@@ -38,8 +38,6 @@
             this.La = new MetroFramework.Controls.MetroLabel();
             this.TxtBusStopName = new MetroFramework.Controls.MetroTextBox();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.bstopNm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bstopId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnSearch = new MetroFramework.Controls.MetroButton();
             this.GrdBusStopInfo = new MetroFramework.Controls.MetroGrid();
             this.lineNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +45,8 @@
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.bstopNm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bstopId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrdBusStopInfo)).BeginInit();
             this.metroTabControl1.SuspendLayout();
@@ -142,20 +142,6 @@
             this.metroGrid1.Size = new System.Drawing.Size(450, 340);
             this.metroGrid1.TabIndex = 2;
             this.metroGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellClick);
-            // 
-            // bstopNm
-            // 
-            this.bstopNm.HeaderText = "정류장 이름";
-            this.bstopNm.Name = "bstopNm";
-            this.bstopNm.ReadOnly = true;
-            this.bstopNm.Width = 225;
-            // 
-            // bstopId
-            // 
-            this.bstopId.HeaderText = "정류장 ID";
-            this.bstopId.Name = "bstopId";
-            this.bstopId.ReadOnly = true;
-            this.bstopId.Width = 225;
             // 
             // BtnSearch
             // 
@@ -270,11 +256,26 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(793, 559);
+            this.metroTabPage2.Size = new System.Drawing.Size(785, 411);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // bstopNm
+            // 
+            this.bstopNm.HeaderText = "정류장 이름";
+            this.bstopNm.Name = "bstopNm";
+            this.bstopNm.ReadOnly = true;
+            this.bstopNm.Width = 225;
+            // 
+            // bstopId
+            // 
+            this.bstopId.HeaderText = "정류장 ID";
+            this.bstopId.Name = "bstopId";
+            this.bstopId.ReadOnly = true;
+            this.bstopId.Visible = false;
+            this.bstopId.Width = 225;
             // 
             // MainForm
             // 
@@ -300,14 +301,14 @@
         private MetroFramework.Controls.MetroTextBox TxtBusStopName;
         private MetroFramework.Controls.MetroGrid metroGrid1;
         private MetroFramework.Controls.MetroButton BtnSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bstopNm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bstopId;
         private MetroFramework.Controls.MetroGrid GrdBusStopInfo;
         private System.Windows.Forms.DataGridViewTextBoxColumn lineNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn min;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bstopNm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bstopId;
     }
 }
 
