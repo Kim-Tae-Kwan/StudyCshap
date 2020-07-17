@@ -430,7 +430,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "MembMngForm";
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "도서 관리";
+            this.Text = "회원 관리";
             this.Load += new System.EventHandler(this.DivMngForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

@@ -118,5 +118,93 @@ namespace MountainSearchApp
 
             GridMoun.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
+
+        private void GridMoun_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private string GetInfo(string info, XmlNode item)
+        {
+            string temp = string.Empty;
+
+            temp = item[$"{info}"].InnerText == null ? "정보 없음": item[$"{info}"].InnerText.Replace("&lt;br /&gt;", "");
+            temp = temp.Replace("&amp;", "");
+            temp = temp.Replace("nbsp;", "");
+            temp = temp.Replace("<BR>", "");
+            temp = temp.Replace(". ", ".\r\n\r\n");
+            temp = temp.Replace(" ☎", "\r\n☎");
+
+
+            if (temp == string.Empty)
+            {
+                temp = "정보 없음";
+            }
+
+            return temp;
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void GridMoun_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                string mountinfo = "mntninfodtlinfocont";
+                string hndfmsmtnslctnrson = "hndfmsmtnslctnrson";
+                string mounttraffic = "pbtrninfodscrt";
+                string mounttour = "crcmrsghtnginfodscrt";
+                //Grid 셀 중 Rows 데이터 들고옴
+                DataGridViewRow data = GridMoun.Rows[e.RowIndex];//선택한 행의 데이터 들고옴
+
+                WebClient wc = new WebClient() { Encoding = Encoding.UTF8 };
+                XmlDocument doc = new XmlDocument();
+
+                StringBuilder str = new StringBuilder();
+                str.Append("http://apis.data.go.kr/openapi/service/trailInfoService/getforeststoryservice"); //OpenAPI 기본 URL
+                str.Append("?serviceKey=2397AZ16W0CRNwX58btT5QMtQ9gDRjo8TvCgF0Uj7QaSolpegysBotc5pVZg7HKyDBSK%2B%2BcabU%2FiMz5HfJmXVg%3D%3D");//인증키
+                str.Append("&mntnNm=" + data.Cells[1].Value.ToString()); // 산이름
+                //str.Append("&mntnAdd=" + data.Cells[2].Value.ToString()); // 산 소재지
+                str.Append("&mntnHght=" + data.Cells[3].Value.ToString()); // 산 높이
+
+                string xml = wc.DownloadString(str.ToString());
+                doc.LoadXml(xml);
+
+                XmlElement root = doc.DocumentElement;
+                XmlNodeList items = doc.GetElementsByTagName("item");
+
+                try
+                {
+                    foreach (XmlNode item in items)
+                    {
+                        //100대 산 , 교통, 관광
+
+
+                        TxtMounInfo.Text = GetInfo(mountinfo, item);
+                        TxtMounInfo2.Text = GetInfo(hndfmsmtnslctnrson, item);
+                        TxtTraffic.Text = GetInfo(mounttraffic, item);
+                        TxtTour.Text = GetInfo(mounttour, item);
+
+                    }
+
+
+
+
+                }
+                catch (NullReferenceException ex)
+                {
+
+                    MessageBox.Show($"에러 발생 : {ex.Message} ", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    str.Clear();
+                }
+
+            }
+        }
     }
 }

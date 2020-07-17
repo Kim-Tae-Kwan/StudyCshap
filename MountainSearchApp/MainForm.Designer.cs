@@ -35,15 +35,36 @@
             this.TxtMounName = new MetroFramework.Controls.MetroTextBox();
             this.BtnSearch = new MetroFramework.Controls.MetroButton();
             this.GridMoun = new MetroFramework.Controls.MetroGrid();
-            this.CboArea = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.CboSeason = new MetroFramework.Controls.MetroComboBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mntnnm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mntninfopoflc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mntninfohght = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CboArea = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.CboSeason = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.TxtMounInfo = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.TabMounInfo = new System.Windows.Forms.TabPage();
+            this.TabTraffic = new System.Windows.Forms.TabPage();
+            this.GroupInfo = new System.Windows.Forms.GroupBox();
+            this.GroupInfo2 = new System.Windows.Forms.GroupBox();
+            this.TxtMounInfo2 = new System.Windows.Forms.TextBox();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.TxtTraffic = new System.Windows.Forms.TextBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.TxtTour = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GridMoun)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.TabMounInfo.SuspendLayout();
+            this.TabTraffic.SuspendLayout();
+            this.GroupInfo.SuspendLayout();
+            this.GroupInfo2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabMoun
@@ -99,7 +120,6 @@
             // 
             this.GridMoun.AllowUserToAddRows = false;
             this.GridMoun.AllowUserToDeleteRows = false;
-            this.GridMoun.AllowUserToResizeRows = false;
             this.GridMoun.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridMoun.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridMoun.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -128,7 +148,7 @@
             this.GridMoun.DefaultCellStyle = dataGridViewCellStyle2;
             this.GridMoun.EnableHeadersVisualStyles = false;
             this.GridMoun.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.GridMoun.GridColor = System.Drawing.Color.Silver;
+            this.GridMoun.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridMoun.Location = new System.Drawing.Point(38, 152);
             this.GridMoun.Name = "GridMoun";
             this.GridMoun.ReadOnly = true;
@@ -144,10 +164,37 @@
             this.GridMoun.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GridMoun.RowTemplate.Height = 23;
             this.GridMoun.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GridMoun.Size = new System.Drawing.Size(555, 518);
+            this.GridMoun.Size = new System.Drawing.Size(508, 518);
             this.GridMoun.Style = MetroFramework.MetroColorStyle.Green;
             this.GridMoun.TabIndex = 2;
             this.GridMoun.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.GridMoun.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridMoun_CellClick);
+            this.GridMoun.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridMoun_CellDoubleClick);
+            // 
+            // No
+            // 
+            this.No.HeaderText = "번호";
+            this.No.Name = "No";
+            this.No.ReadOnly = true;
+            // 
+            // mntnnm
+            // 
+            this.mntnnm.HeaderText = "산 이름";
+            this.mntnnm.Name = "mntnnm";
+            this.mntnnm.ReadOnly = true;
+            // 
+            // mntninfopoflc
+            // 
+            this.mntninfopoflc.HeaderText = "지역";
+            this.mntninfopoflc.Name = "mntninfopoflc";
+            this.mntninfopoflc.ReadOnly = true;
+            this.mntninfopoflc.Width = 52;
+            // 
+            // mntninfohght
+            // 
+            this.mntninfohght.HeaderText = "높이(m)";
+            this.mntninfohght.Name = "mntninfohght";
+            this.mntninfohght.ReadOnly = true;
             // 
             // CboArea
             // 
@@ -187,36 +234,143 @@
             this.metroLabel2.TabIndex = 4;
             this.metroLabel2.Text = "계절 : ";
             // 
-            // No
+            // TxtMounInfo
             // 
-            this.No.HeaderText = "번호";
-            this.No.Name = "No";
-            this.No.ReadOnly = true;
+            this.TxtMounInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtMounInfo.Location = new System.Drawing.Point(3, 17);
+            this.TxtMounInfo.Multiline = true;
+            this.TxtMounInfo.Name = "TxtMounInfo";
+            this.TxtMounInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TxtMounInfo.Size = new System.Drawing.Size(685, 233);
+            this.TxtMounInfo.TabIndex = 5;
             // 
-            // mntnnm
+            // tabControl1
             // 
-            this.mntnnm.HeaderText = "산 이름";
-            this.mntnnm.Name = "mntnnm";
-            this.mntnnm.ReadOnly = true;
+            this.tabControl1.Controls.Add(this.TabMounInfo);
+            this.tabControl1.Controls.Add(this.TabTraffic);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tabControl1.Location = new System.Drawing.Point(703, 60);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(711, 611);
+            this.tabControl1.TabIndex = 6;
             // 
-            // mntninfopoflc
+            // TabMounInfo
             // 
-            this.mntninfopoflc.HeaderText = "지역";
-            this.mntninfopoflc.Name = "mntninfopoflc";
-            this.mntninfopoflc.ReadOnly = true;
-            this.mntninfopoflc.Width = 250;
+            this.TabMounInfo.Controls.Add(this.GroupInfo2);
+            this.TabMounInfo.Controls.Add(this.GroupInfo);
+            this.TabMounInfo.Location = new System.Drawing.Point(4, 22);
+            this.TabMounInfo.Name = "TabMounInfo";
+            this.TabMounInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.TabMounInfo.Size = new System.Drawing.Size(703, 585);
+            this.TabMounInfo.TabIndex = 0;
+            this.TabMounInfo.Text = "산 정보";
+            this.TabMounInfo.UseVisualStyleBackColor = true;
             // 
-            // mntninfohght
+            // TabTraffic
             // 
-            this.mntninfohght.HeaderText = "높이(m)";
-            this.mntninfohght.Name = "mntninfohght";
-            this.mntninfohght.ReadOnly = true;
+            this.TabTraffic.Controls.Add(this.splitContainer1);
+            this.TabTraffic.Location = new System.Drawing.Point(4, 22);
+            this.TabTraffic.Name = "TabTraffic";
+            this.TabTraffic.Padding = new System.Windows.Forms.Padding(3);
+            this.TabTraffic.Size = new System.Drawing.Size(703, 585);
+            this.TabTraffic.TabIndex = 1;
+            this.TabTraffic.Text = "교통/관광 정보";
+            this.TabTraffic.UseVisualStyleBackColor = true;
+            // 
+            // GroupInfo
+            // 
+            this.GroupInfo.Controls.Add(this.TxtMounInfo);
+            this.GroupInfo.Location = new System.Drawing.Point(6, 6);
+            this.GroupInfo.Name = "GroupInfo";
+            this.GroupInfo.Size = new System.Drawing.Size(691, 253);
+            this.GroupInfo.TabIndex = 0;
+            this.GroupInfo.TabStop = false;
+            this.GroupInfo.Text = "산 상세정보";
+            // 
+            // GroupInfo2
+            // 
+            this.GroupInfo2.Controls.Add(this.TxtMounInfo2);
+            this.GroupInfo2.Location = new System.Drawing.Point(6, 265);
+            this.GroupInfo2.Name = "GroupInfo2";
+            this.GroupInfo2.Size = new System.Drawing.Size(688, 314);
+            this.GroupInfo2.TabIndex = 1;
+            this.GroupInfo2.TabStop = false;
+            this.GroupInfo2.Text = "100대명산 선정이유";
+            // 
+            // TxtMounInfo2
+            // 
+            this.TxtMounInfo2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtMounInfo2.Location = new System.Drawing.Point(3, 17);
+            this.TxtMounInfo2.Multiline = true;
+            this.TxtMounInfo2.Name = "TxtMounInfo2";
+            this.TxtMounInfo2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TxtMounInfo2.Size = new System.Drawing.Size(682, 294);
+            this.TxtMounInfo2.TabIndex = 0;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.TxtTraffic);
+            this.splitContainer1.Panel1.Controls.Add(this.metroLabel3);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.TxtTour);
+            this.splitContainer1.Panel2.Controls.Add(this.metroLabel4);
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
+            this.splitContainer1.Size = new System.Drawing.Size(697, 579);
+            this.splitContainer1.SplitterDistance = 269;
+            this.splitContainer1.TabIndex = 0;
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(12, 10);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(69, 19);
+            this.metroLabel3.TabIndex = 0;
+            this.metroLabel3.Text = "교통 정보";
+            // 
+            // TxtTraffic
+            // 
+            this.TxtTraffic.Location = new System.Drawing.Point(12, 33);
+            this.TxtTraffic.Multiline = true;
+            this.TxtTraffic.Name = "TxtTraffic";
+            this.TxtTraffic.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TxtTraffic.Size = new System.Drawing.Size(671, 233);
+            this.TxtTraffic.TabIndex = 1;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(12, 10);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(69, 19);
+            this.metroLabel4.TabIndex = 0;
+            this.metroLabel4.Text = "관광 정보";
+            // 
+            // TxtTour
+            // 
+            this.TxtTour.Location = new System.Drawing.Point(12, 32);
+            this.TxtTour.Multiline = true;
+            this.TxtTour.Name = "TxtTour";
+            this.TxtTour.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TxtTour.Size = new System.Drawing.Size(671, 233);
+            this.TxtTour.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 801);
+            this.ClientSize = new System.Drawing.Size(1434, 691);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.CboSeason);
@@ -230,6 +384,19 @@
             this.Text = "산 정보 찾기";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridMoun)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.TabMounInfo.ResumeLayout(false);
+            this.TabTraffic.ResumeLayout(false);
+            this.GroupInfo.ResumeLayout(false);
+            this.GroupInfo.PerformLayout();
+            this.GroupInfo2.ResumeLayout(false);
+            this.GroupInfo2.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,10 +412,22 @@
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroComboBox CboSeason;
         private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.TextBox TxtMounInfo;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage TabMounInfo;
+        private System.Windows.Forms.TabPage TabTraffic;
         private System.Windows.Forms.DataGridViewTextBoxColumn No;
         private System.Windows.Forms.DataGridViewTextBoxColumn mntnnm;
         private System.Windows.Forms.DataGridViewTextBoxColumn mntninfopoflc;
         private System.Windows.Forms.DataGridViewTextBoxColumn mntninfohght;
+        private System.Windows.Forms.GroupBox GroupInfo2;
+        private System.Windows.Forms.TextBox TxtMounInfo2;
+        private System.Windows.Forms.GroupBox GroupInfo;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TextBox TxtTraffic;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private System.Windows.Forms.TextBox TxtTour;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
     }
 }
 

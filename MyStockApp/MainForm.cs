@@ -38,5 +38,16 @@ namespace MyStockApp
 
             this.Close();
         }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+
+            GalmatgilForm form = new GalmatgilForm();
+            form.Location = this.Location;
+            form.ShowDialog();
+            
+            this.Close();
+        }
     }
 }

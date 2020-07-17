@@ -12,3 +12,7 @@ C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\bin\Debug\MetroFramework.Fonts.d
 C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.csproj.CopyComplete
 C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.SubItems.SearchItemForm.resources
 C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.MainForm.resources
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.SubItems.GalmatgilForm.resources
+C:\Users\PKNU\Desktop\IOT\StudyCshap\MyStockApp\obj\Debug\MyStockApp.SubItems.DownloadForm.resources

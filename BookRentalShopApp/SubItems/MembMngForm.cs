@@ -161,19 +161,21 @@ namespace BookRentalShopApp.SubItems
         /// </summary>
         private void SaveData()
         {
+            #region Null 체크
             //빈값 비교 NULL 체크
             if (CboLevel.SelectedIndex < 1 || string.IsNullOrEmpty(TxtNames.Text) || string.IsNullOrEmpty(TxtMobile.Text))
             {
                 MetroMessageBox.Show(this, "빈 값은 넣을 수 없습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
+            #endregion
+            #region 모드 체크
             if (MyMode == BaseMode.NONE)
             {
                 MetroMessageBox.Show(this, "신규등록 시 신규 버튼을 눌러주세요", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-
+            #endregion
             try
             {
                 using (MySqlConnection conn = new MySqlConnection(Commons.CONNSTR)) //using 사용시 conn.close() 안씀

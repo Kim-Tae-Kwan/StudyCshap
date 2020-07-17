@@ -81,25 +81,13 @@ LL		사계절
 
 출력결과
 
-상세정보내용(상세정보)		mntnInfodtlinfocont	
+상세정보내용(상세정보)		mntnInfodtlinfocont
+100대명산 선정이유		hndfmsmtnslctnrson
+	
 대중교통정보설명(교통정보 대중교통)	pbtrninfodscrt	
-주변관광정보설명			crcmrsghtnginfodscrt	
-산정보주변관광정보기타코스설명	crcmrsghtnginfoetcdscrt	
-주변관광정보이미지		crcmrsghtngetcimageseq	
+주변관광정보설명			crcmrsghtnginfodscrt
+	
 산행포인트설명			hkngpntdscrt	
-100대명산 지도명(이미지)		hndfmsmtnmapimageseq	
-산정보이미지			mntnattchimageseq	
-산정보지도다운로드파일		mntninfomapdnldfilenm	
-교통정보이미지			mntninfotrnspinfoimageseq	
-산정보부제			mntnsbttlinfo	
 대중교통정보설명(교통정보 대중교통)	ptmntrcmmncoursdscrt	
-추천코스이미지			rcmmncoursimageseq	
-산코드				mntnid	
-산명				mntnnm	
-100대명산 선정이유		hndfmsmtnslctnrson	
-산정보소재지(소재지)		mntninfopoflc	
-산정보 높이			mntninfohght	
-산정보관리주체명(관리주체)		mntninfomngmemnbdnm	
-산정보개관(개관)			mntninfodscrt	
 
-
+	

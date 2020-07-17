@@ -64,5 +64,16 @@ namespace BookRentalShopApp
             MembMngForm form = new MembMngForm();
             ShowFormControl(form, "회원 관리");
         }
+
+        private void MnuItemRentalMng_Click(object sender, EventArgs e)
+        {
+            RentalMngForm form = new RentalMngForm();
+            ShowFormControl(form, "대여 관리");
+        }
+
+        private void MnuItemUserMng_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

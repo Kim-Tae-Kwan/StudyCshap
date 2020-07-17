@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.MtlSearchItem = new MetroFramework.Controls.MetroTile();
-            this.MtlAnalysis = new MetroFramework.Controls.MetroTile();
             this.MtlSimulator = new MetroFramework.Controls.MetroTile();
+            this.MtlAnalysis = new MetroFramework.Controls.MetroTile();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.MtlSearchItem = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
-            // MtlSearchItem
+            // MtlSimulator
             // 
-            this.MtlSearchItem.Location = new System.Drawing.Point(20, 63);
-            this.MtlSearchItem.Name = "MtlSearchItem";
-            this.MtlSearchItem.PaintTileCount = false;
-            this.MtlSearchItem.Size = new System.Drawing.Size(257, 150);
-            this.MtlSearchItem.TabIndex = 0;
-            this.MtlSearchItem.Text = "주식정보검색";
-            this.MtlSearchItem.TileImage = global::MyStockApp.Properties.Resources.marketing2;
-            this.MtlSearchItem.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MtlSearchItem.UseTileImage = true;
-            this.MtlSearchItem.Click += new System.EventHandler(this.MtlSearchItem_Click);
+            this.MtlSimulator.Location = new System.Drawing.Point(282, 219);
+            this.MtlSimulator.Name = "MtlSimulator";
+            this.MtlSimulator.PaintTileCount = false;
+            this.MtlSimulator.Size = new System.Drawing.Size(390, 150);
+            this.MtlSimulator.Style = MetroFramework.MetroColorStyle.Lime;
+            this.MtlSimulator.TabIndex = 2;
+            this.MtlSimulator.Text = "투자시뮬레이터";
+            this.MtlSimulator.TileImage = global::MyStockApp.Properties.Resources.simulator2;
+            this.MtlSimulator.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MtlSimulator.UseTileImage = true;
             // 
             // MtlAnalysis
             // 
@@ -60,18 +61,32 @@
             this.MtlAnalysis.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.MtlAnalysis.UseTileImage = true;
             // 
-            // MtlSimulator
+            // metroTile1
             // 
-            this.MtlSimulator.Location = new System.Drawing.Point(20, 219);
-            this.MtlSimulator.Name = "MtlSimulator";
-            this.MtlSimulator.PaintTileCount = false;
-            this.MtlSimulator.Size = new System.Drawing.Size(390, 150);
-            this.MtlSimulator.Style = MetroFramework.MetroColorStyle.Lime;
-            this.MtlSimulator.TabIndex = 2;
-            this.MtlSimulator.Text = "투자시뮬레이터";
-            this.MtlSimulator.TileImage = global::MyStockApp.Properties.Resources.simulator2;
-            this.MtlSimulator.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.MtlSimulator.UseTileImage = true;
+            this.metroTile1.Location = new System.Drawing.Point(416, 63);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.PaintTileCount = false;
+            this.metroTile1.Size = new System.Drawing.Size(257, 150);
+            this.metroTile1.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroTile1.TabIndex = 0;
+            this.metroTile1.Text = "갈맷길정보";
+            this.metroTile1.TileImage = global::MyStockApp.Properties.Resources.seagull2;
+            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
+            // MtlSearchItem
+            // 
+            this.MtlSearchItem.Location = new System.Drawing.Point(20, 63);
+            this.MtlSearchItem.Name = "MtlSearchItem";
+            this.MtlSearchItem.PaintTileCount = false;
+            this.MtlSearchItem.Size = new System.Drawing.Size(257, 150);
+            this.MtlSearchItem.TabIndex = 0;
+            this.MtlSearchItem.Text = "주식정보검색";
+            this.MtlSearchItem.TileImage = global::MyStockApp.Properties.Resources.marketing2;
+            this.MtlSearchItem.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MtlSearchItem.UseTileImage = true;
+            this.MtlSearchItem.Click += new System.EventHandler(this.MtlSearchItem_Click);
             // 
             // MainForm
             // 
@@ -80,6 +95,7 @@
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.MtlSimulator);
             this.Controls.Add(this.MtlAnalysis);
+            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.MtlSearchItem);
             this.Font = new System.Drawing.Font("나눔고딕코딩", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -100,6 +116,7 @@
         private MetroFramework.Controls.MetroTile MtlSearchItem;
         private MetroFramework.Controls.MetroTile MtlAnalysis;
         private MetroFramework.Controls.MetroTile MtlSimulator;
+        private MetroFramework.Controls.MetroTile metroTile1;
     }
 }
 

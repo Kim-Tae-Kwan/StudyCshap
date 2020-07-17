@@ -56,7 +56,7 @@ namespace MyStockApp.SubItems
 
             //Get 방식 URL 문자열 생성.
             str.Append("http://api.seibro.or.kr/openapi/service/StockSvc/getStkIsinByNmN1"); //OpenAPI 기본 URL
-            str.Append("?serviceKey=MAks6OUeYB0tk4rqW1sV3wlv0LVY2YA3AtTi4PnciAqKhffDiZjU%2FJ3AQlEFqslb6W6S2BSsim97xFNxIzjfNA%3D%3D");//인증키
+            str.Append("?serviceKey=2397AZ16W0CRNwX58btT5QMtQ9gDRjo8TvCgF0Uj7QaSolpegysBotc5pVZg7HKyDBSK%2B%2BcabU%2FiMz5HfJmXVg%3D%3D");//인증키
             str.Append("&secnNm="+TxtSearchItem.Text); //종목명
             str.Append("&numOfRows=200"); //읽어올 데이터 수
             str.Append("&pageNo=1"); //페이지 수

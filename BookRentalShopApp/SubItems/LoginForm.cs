@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
@@ -55,8 +56,13 @@ namespace BookRentalShopApp.SubItems
                     //파라미터 생성
                     MySqlParameter paramUserID = new MySqlParameter("@userID", MySqlDbType.VarChar, 12);
                     paramUserID.Value = TxtUserID.Text.Trim();
+
                     MySqlParameter paramPassword = new MySqlParameter("@Password", MySqlDbType.VarChar);
-                    paramPassword.Value = TxtPassword.Text.Trim();
+
+                    var md5Hash = MD5.Create();
+                    var cryptoPassword = Commons.GetMD5Hash(md5Hash, TxtPassword.Text.Trim());
+                    paramPassword.Value = cryptoPassword;
+
                     cmd.Parameters.Add(paramUserID);
                     cmd.Parameters.Add(paramPassword);
                     
