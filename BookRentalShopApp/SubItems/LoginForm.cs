@@ -79,6 +79,7 @@ namespace BookRentalShopApp.SubItems
                     else 
                     {
                         resultID = reader["userID"] != null ? reader["userID"].ToString() : string.Empty;
+                        Commons.USERID = resultID; //200720 12:30 추가
                         MetroMessageBox.Show(this, $"{resultID} 로그인성공");
                     }
 

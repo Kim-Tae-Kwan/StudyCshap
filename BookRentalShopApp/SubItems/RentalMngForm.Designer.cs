@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.GrdMembTbl = new MetroFramework.Controls.MetroGrid();
+            this.GrdRentalbTbl = new MetroFramework.Controls.MetroGrid();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DtpReturnDate = new MetroFramework.Controls.MetroDateTime();
             this.DtpRentalDate = new MetroFramework.Controls.MetroDateTime();
@@ -48,11 +48,12 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.LabName = new MetroFramework.Controls.MetroLabel();
             this.LabCode = new MetroFramework.Controls.MetroLabel();
+            this.BtnExcelExprot = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GrdMembTbl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrdRentalbTbl)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,67 +65,69 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.GrdMembTbl);
+            this.splitContainer1.Panel1.Controls.Add(this.GrdRentalbTbl);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(760, 370);
-            this.splitContainer1.SplitterDistance = 253;
+            this.splitContainer1.Size = new System.Drawing.Size(960, 370);
+            this.splitContainer1.SplitterDistance = 319;
             this.splitContainer1.TabIndex = 0;
             // 
-            // GrdMembTbl
+            // GrdRentalbTbl
             // 
-            this.GrdMembTbl.AllowUserToAddRows = false;
-            this.GrdMembTbl.AllowUserToDeleteRows = false;
-            this.GrdMembTbl.AllowUserToResizeRows = false;
-            this.GrdMembTbl.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GrdMembTbl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GrdMembTbl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.GrdMembTbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GrdMembTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.GrdMembTbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GrdMembTbl.DefaultCellStyle = dataGridViewCellStyle5;
-            this.GrdMembTbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GrdMembTbl.EnableHeadersVisualStyles = false;
-            this.GrdMembTbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.GrdMembTbl.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GrdMembTbl.Location = new System.Drawing.Point(0, 0);
-            this.GrdMembTbl.Name = "GrdMembTbl";
-            this.GrdMembTbl.ReadOnly = true;
-            this.GrdMembTbl.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GrdMembTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.GrdMembTbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.GrdMembTbl.RowTemplate.Height = 23;
-            this.GrdMembTbl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrdMembTbl.Size = new System.Drawing.Size(253, 370);
-            this.GrdMembTbl.Style = MetroFramework.MetroColorStyle.Green;
-            this.GrdMembTbl.TabIndex = 0;
-            this.GrdMembTbl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdDivTbl_CellClick);
+            this.GrdRentalbTbl.AllowUserToAddRows = false;
+            this.GrdRentalbTbl.AllowUserToDeleteRows = false;
+            this.GrdRentalbTbl.AllowUserToResizeRows = false;
+            this.GrdRentalbTbl.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GrdRentalbTbl.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GrdRentalbTbl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GrdRentalbTbl.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GrdRentalbTbl.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GrdRentalbTbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.GrdRentalbTbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GrdRentalbTbl.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GrdRentalbTbl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GrdRentalbTbl.EnableHeadersVisualStyles = false;
+            this.GrdRentalbTbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.GrdRentalbTbl.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GrdRentalbTbl.Location = new System.Drawing.Point(0, 0);
+            this.GrdRentalbTbl.Name = "GrdRentalbTbl";
+            this.GrdRentalbTbl.ReadOnly = true;
+            this.GrdRentalbTbl.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GrdRentalbTbl.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.GrdRentalbTbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.GrdRentalbTbl.RowTemplate.Height = 23;
+            this.GrdRentalbTbl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GrdRentalbTbl.Size = new System.Drawing.Size(319, 370);
+            this.GrdRentalbTbl.Style = MetroFramework.MetroColorStyle.Green;
+            this.GrdRentalbTbl.TabIndex = 0;
+            this.GrdRentalbTbl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdDivTbl_CellClick);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.BtnExcelExprot);
             this.groupBox1.Controls.Add(this.DtpReturnDate);
             this.groupBox1.Controls.Add(this.DtpRentalDate);
             this.groupBox1.Controls.Add(this.CboMembers);
@@ -143,7 +146,7 @@
             this.groupBox1.Font = new System.Drawing.Font("나눔고딕코딩", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(503, 370);
+            this.groupBox1.Size = new System.Drawing.Size(637, 370);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "상세";
@@ -155,6 +158,7 @@
             this.DtpReturnDate.Name = "DtpReturnDate";
             this.DtpReturnDate.Size = new System.Drawing.Size(350, 29);
             this.DtpReturnDate.TabIndex = 4;
+            this.DtpReturnDate.ValueChanged += new System.EventHandler(this.DtpReturnDate_ValueChanged);
             // 
             // DtpRentalDate
             // 
@@ -311,11 +315,22 @@
             this.LabCode.Text = "번호 : ";
             this.LabCode.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // BtnExcelExprot
+            // 
+            this.BtnExcelExprot.Location = new System.Drawing.Point(27, 247);
+            this.BtnExcelExprot.Name = "BtnExcelExprot";
+            this.BtnExcelExprot.Size = new System.Drawing.Size(151, 71);
+            this.BtnExcelExprot.TabIndex = 9;
+            this.BtnExcelExprot.Text = "Excel Exprot";
+            this.BtnExcelExprot.UseSelectable = true;
+            this.BtnExcelExprot.Click += new System.EventHandler(this.BtnExcelExprot_Click);
+            // 
             // RentalMngForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1000, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "RentalMngForm";
             this.Style = MetroFramework.MetroColorStyle.Green;
@@ -325,7 +340,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GrdMembTbl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrdRentalbTbl)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -335,7 +350,7 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private MetroFramework.Controls.MetroGrid GrdMembTbl;
+        private MetroFramework.Controls.MetroGrid GrdRentalbTbl;
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroButton BtnCancle;
         private MetroFramework.Controls.MetroButton BtnSave;
@@ -351,5 +366,6 @@
         private MetroFramework.Controls.MetroDateTime DtpReturnDate;
         private MetroFramework.Controls.MetroDateTime DtpRentalDate;
         private MetroFramework.Controls.MetroComboBox CboMembers;
+        private MetroFramework.Controls.MetroButton BtnExcelExprot;
     }
 }

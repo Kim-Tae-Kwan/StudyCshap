@@ -40,3 +40,11 @@ C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopA
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopApp.SubItems.BookDBMngForm.resources
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopApp.SubItems.MembMngForm.resources
 C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\obj\Debug\BookRentalShopApp.SubItems.RentalMngForm.resources
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\bin\Debug\NPOI.dll
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\bin\Debug\NPOI.OOXML.dll
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\PKNU\Desktop\IOT\StudyCshap\BookRentalShopApp\bin\Debug\ICSharpCode.SharpZipLib.xml
