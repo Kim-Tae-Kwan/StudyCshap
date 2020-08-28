@@ -46,21 +46,22 @@
             this.TxtMounInfo = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TabMounInfo = new System.Windows.Forms.TabPage();
-            this.TabTraffic = new System.Windows.Forms.TabPage();
-            this.GroupInfo = new System.Windows.Forms.GroupBox();
             this.GroupInfo2 = new System.Windows.Forms.GroupBox();
             this.TxtMounInfo2 = new System.Windows.Forms.TextBox();
+            this.GroupInfo = new System.Windows.Forms.GroupBox();
+            this.TabTraffic = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.TxtTraffic = new System.Windows.Forms.TextBox();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.TxtTour = new System.Windows.Forms.TextBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.GridMoun)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.TabMounInfo.SuspendLayout();
-            this.TabTraffic.SuspendLayout();
-            this.GroupInfo.SuspendLayout();
             this.GroupInfo2.SuspendLayout();
+            this.GroupInfo.SuspendLayout();
+            this.TabTraffic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -120,6 +121,7 @@
             // 
             this.GridMoun.AllowUserToAddRows = false;
             this.GridMoun.AllowUserToDeleteRows = false;
+            this.GridMoun.AllowUserToResizeRows = false;
             this.GridMoun.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridMoun.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridMoun.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -149,7 +151,7 @@
             this.GridMoun.EnableHeadersVisualStyles = false;
             this.GridMoun.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridMoun.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridMoun.Location = new System.Drawing.Point(38, 152);
+            this.GridMoun.Location = new System.Drawing.Point(38, 182);
             this.GridMoun.Name = "GridMoun";
             this.GridMoun.ReadOnly = true;
             this.GridMoun.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -164,7 +166,7 @@
             this.GridMoun.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GridMoun.RowTemplate.Height = 23;
             this.GridMoun.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GridMoun.Size = new System.Drawing.Size(508, 518);
+            this.GridMoun.Size = new System.Drawing.Size(508, 488);
             this.GridMoun.Style = MetroFramework.MetroColorStyle.Green;
             this.GridMoun.TabIndex = 2;
             this.GridMoun.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -267,27 +269,6 @@
             this.TabMounInfo.Text = "산 정보";
             this.TabMounInfo.UseVisualStyleBackColor = true;
             // 
-            // TabTraffic
-            // 
-            this.TabTraffic.Controls.Add(this.splitContainer1);
-            this.TabTraffic.Location = new System.Drawing.Point(4, 22);
-            this.TabTraffic.Name = "TabTraffic";
-            this.TabTraffic.Padding = new System.Windows.Forms.Padding(3);
-            this.TabTraffic.Size = new System.Drawing.Size(703, 585);
-            this.TabTraffic.TabIndex = 1;
-            this.TabTraffic.Text = "교통/관광 정보";
-            this.TabTraffic.UseVisualStyleBackColor = true;
-            // 
-            // GroupInfo
-            // 
-            this.GroupInfo.Controls.Add(this.TxtMounInfo);
-            this.GroupInfo.Location = new System.Drawing.Point(6, 6);
-            this.GroupInfo.Name = "GroupInfo";
-            this.GroupInfo.Size = new System.Drawing.Size(691, 253);
-            this.GroupInfo.TabIndex = 0;
-            this.GroupInfo.TabStop = false;
-            this.GroupInfo.Text = "산 상세정보";
-            // 
             // GroupInfo2
             // 
             this.GroupInfo2.Controls.Add(this.TxtMounInfo2);
@@ -307,6 +288,27 @@
             this.TxtMounInfo2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.TxtMounInfo2.Size = new System.Drawing.Size(682, 294);
             this.TxtMounInfo2.TabIndex = 0;
+            // 
+            // GroupInfo
+            // 
+            this.GroupInfo.Controls.Add(this.TxtMounInfo);
+            this.GroupInfo.Location = new System.Drawing.Point(6, 6);
+            this.GroupInfo.Name = "GroupInfo";
+            this.GroupInfo.Size = new System.Drawing.Size(691, 253);
+            this.GroupInfo.TabIndex = 0;
+            this.GroupInfo.TabStop = false;
+            this.GroupInfo.Text = "산 상세정보";
+            // 
+            // TabTraffic
+            // 
+            this.TabTraffic.Controls.Add(this.splitContainer1);
+            this.TabTraffic.Location = new System.Drawing.Point(4, 22);
+            this.TabTraffic.Name = "TabTraffic";
+            this.TabTraffic.Padding = new System.Windows.Forms.Padding(3);
+            this.TabTraffic.Size = new System.Drawing.Size(703, 585);
+            this.TabTraffic.TabIndex = 1;
+            this.TabTraffic.Text = "교통/관광 정보";
+            this.TabTraffic.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
             // 
@@ -329,15 +331,6 @@
             this.splitContainer1.SplitterDistance = 269;
             this.splitContainer1.TabIndex = 0;
             // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(12, 10);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(69, 19);
-            this.metroLabel3.TabIndex = 0;
-            this.metroLabel3.Text = "교통 정보";
-            // 
             // TxtTraffic
             // 
             this.TxtTraffic.Location = new System.Drawing.Point(12, 33);
@@ -347,14 +340,14 @@
             this.TxtTraffic.Size = new System.Drawing.Size(671, 233);
             this.TxtTraffic.TabIndex = 1;
             // 
-            // metroLabel4
+            // metroLabel3
             // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(12, 10);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(69, 19);
-            this.metroLabel4.TabIndex = 0;
-            this.metroLabel4.Text = "관광 정보";
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(12, 10);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(69, 19);
+            this.metroLabel3.TabIndex = 0;
+            this.metroLabel3.Text = "교통 정보";
             // 
             // TxtTour
             // 
@@ -365,11 +358,30 @@
             this.TxtTour.Size = new System.Drawing.Size(671, 233);
             this.TxtTour.TabIndex = 1;
             // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(12, 10);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(69, 19);
+            this.metroLabel4.TabIndex = 0;
+            this.metroLabel4.Text = "관광 정보";
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(38, 160);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(156, 19);
+            this.metroLabel5.TabIndex = 7;
+            this.metroLabel5.Text = "*정보 보기(Double Click)";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1434, 691);
+            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
@@ -386,11 +398,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.GridMoun)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.TabMounInfo.ResumeLayout(false);
-            this.TabTraffic.ResumeLayout(false);
-            this.GroupInfo.ResumeLayout(false);
-            this.GroupInfo.PerformLayout();
             this.GroupInfo2.ResumeLayout(false);
             this.GroupInfo2.PerformLayout();
+            this.GroupInfo.ResumeLayout(false);
+            this.GroupInfo.PerformLayout();
+            this.TabTraffic.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -428,6 +440,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private System.Windows.Forms.TextBox TxtTour;
         private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
     }
 }
 
