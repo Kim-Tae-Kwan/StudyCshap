@@ -119,16 +119,11 @@ namespace MountainSearchApp
             GridMoun.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
 
-        private void GridMoun_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
-
         private string GetInfo(string info, XmlNode item)
         {
             string temp = string.Empty;
 
-            temp = item[$"{info}"].InnerText == null ? "정보 없음": item[$"{info}"].InnerText.Replace("&lt;br /&gt;", "");
+            temp = item[$"{info}"].InnerText == null ? " ": item[$"{info}"].InnerText.Replace("&lt;br /&gt;", "");
             temp = temp.Replace("&amp;", "");
             temp = temp.Replace("nbsp;", "");
             temp = temp.Replace("<BR>", "");
@@ -138,7 +133,7 @@ namespace MountainSearchApp
 
             if (temp == string.Empty)
             {
-                temp = "정보 없음";
+                temp = " ";
             }
 
             return temp;
@@ -186,7 +181,8 @@ namespace MountainSearchApp
                         TxtMounInfo.Text = GetInfo(mountinfo, item);
                         TxtMounInfo2.Text = GetInfo(hndfmsmtnslctnrson, item);
                         TxtTraffic.Text = GetInfo(mounttraffic, item);
-                        TxtTour.Text = GetInfo(mounttour, item);
+                        //TxtTour.Text = GetInfo(mounttour, item);
+                        TxtTraffic.Text += GetInfo(mounttour, item);
 
                     }
 
